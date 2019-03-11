@@ -1,0 +1,1 @@
+echo "<script>alert('提示内容')</script>"
