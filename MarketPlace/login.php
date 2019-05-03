@@ -39,6 +39,11 @@ $password = $_POST['defaultForm-pass'];
 if ($password == $result->fetch()[0]){
 
 	echo "<script>alert('Congratulations!! !');location.href='marketplace.php';</script>";
+	  setcookie("username", $name, time() + 3600, "/");
+  setcookie("username", $name, time() + 3600, "/","www.hzksv.com");
+  setcookie("username", $name, time() + 3600, "/","mataasta.org");
+  setcookie("username", $name, time() + 3600, "/","www.jacquelineleenet.com");
+  setcookie("username", $name, time() + 3600, "/","www.mixturelab.com");
 
 } else {
     	echo "<script>alert('password is wrong!');location.href='marketplace.php';</script>";
@@ -47,10 +52,6 @@ if ($password == $result->fetch()[0]){
   }else{
        echo "<script>alert('username is wrong!');location.href='marketplace.php';</script>";
   }
-  setcookie("username", $name, time() + 3600, "/");
-  setcookie("username", $name, time() + 3600, "/","www.hzksv.com");
-  setcookie("username", $name, time() + 3600, "/","mataasta.org");
-  setcookie("username", $name, time() + 3600, "/","www.jacquelineleenet.com");
-  setcookie("username", $name, time() + 3600, "/","www.mixturelab.com");
+
 ?>
 </html>
